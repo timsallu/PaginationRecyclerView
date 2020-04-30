@@ -89,7 +89,9 @@ public class MainActivity extends AppCompatActivity
         /**
          * manage progress view
          */
-        if (currentPage != PAGE_START) adapter.removeLoading();
+        if (currentPage != PAGE_START)
+          adapter.removeLoading();
+
         adapter.addItems(items);
         swipeRefresh.setRefreshing(false);
 
